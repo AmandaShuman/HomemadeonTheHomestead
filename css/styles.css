@@ -1,7 +1,16 @@
 .title {
   color: white;
-  font-family: 'Indie Flower', cursive;
- }
+  font-family: 'Indie Flower', cursive;n }
 
 .navbar {
   background-color: #214b05; }
+
+.introduction {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background-image: url("../img/retirement-slider.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}

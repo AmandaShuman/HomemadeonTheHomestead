@@ -7,3 +7,13 @@ $color-navbar: #214b05;
 .navbar {
     background-color: $color-navbar;
 }
+
+.introduction {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background-image:url("../img/retirement-slider.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
