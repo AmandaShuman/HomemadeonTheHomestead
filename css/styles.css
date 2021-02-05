@@ -1,9 +1,14 @@
 .title {
   color: white;
-  font-family: 'Indie Flower', cursive;n }
+  font-family: 'Indie Flower', cursive; }
 
-.navbar {
-  background-color: #214b05; }
+.navbar, .adulting, .gardening {
+  background-color: #214b05;
+  color: white; }
+
+.financial, .homesteading {
+  background-color: #96CEA9;
+  color: rgba(24, 1, 1, 0.609); }
 
 .introduction {
   width: 100vw;
@@ -12,5 +17,29 @@
   background-image: url("../img/retirement-slider.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
+  position: relative; 
+}
+
+.card-img-top {
+  max-height: 200px;
+  min-height: 150px;
+  object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    -webkit-text-stroke: .25px black;
+}
+
+.btn-centered {
+  margin: 0;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

@@ -1,11 +1,20 @@
 $color-navbar: #214b05;
+$color-secondary: #96CEA9;
+$text-color: white;
+$text-color-2: rgba(24, 1, 1, 0.609);
 
 .title {
-    color: white;
+    color: $text-color;
     font-family: 'Indie Flower', cursive;
 }
-.navbar {
+.navbar, .adulting, .gardening {
     background-color: $color-navbar;
+    color: $text-color;
+}
+
+.financial, .homesteading {
+    background-color: $color-secondary;
+    color: $text-color-2;
 }
 
 .introduction {
@@ -16,4 +25,26 @@ $color-navbar: #214b05;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.card-img-top {
+    max-height: 200px;
+    min-height: 150px;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+}
+
+.btn-centered {
+  margin: 0;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
