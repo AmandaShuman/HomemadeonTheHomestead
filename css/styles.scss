@@ -4,17 +4,17 @@ $text-color: white;
 $text-color-2: rgba(24, 1, 1, 0.609);
 
 .title {
-    color: $text-color;
-    font-family: 'Indie Flower', cursive;
+  color: $text-color;
+  font-family: 'Indie Flower', cursive;
 }
 .navbar, .adulting, .gardening {
-    background-color: $color-navbar;
-    color: $text-color;
+  background-color: $color-navbar;
+  color: $text-color;
 }
 
 .financial, .homesteading {
-    background-color: $color-secondary;
-    color: $text-color-2;
+  background-color: $color-secondary;
+  color: $text-color-2;
 }
 
 .introduction {
@@ -25,19 +25,20 @@ $text-color-2: rgba(24, 1, 1, 0.609);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 20px;
 }
 
 .card-img-top {
-    max-height: 200px;
-    min-height: 150px;
-    object-fit: cover;
+  max-height: 200px;
+  min-height: 150px;
+  object-fit: cover;
 }
 
 .caption {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
 }
 
 .btn-centered {
@@ -47,4 +48,19 @@ $text-color-2: rgba(24, 1, 1, 0.609);
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.learning-header {
+  padding-top: 0px;
+  color: $text-color;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.selling-header {
+  color: $text-color;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
