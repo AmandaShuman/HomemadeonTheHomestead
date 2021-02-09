@@ -1,5 +1,6 @@
 .title {
   color: white;
+  -webkit-font-smoothing: antialiased;
   font-family: 'Indie Flower', cursive; }
 
 .navbar, .adulting, .gardening {
@@ -11,18 +12,19 @@
   color: rgba(24, 1, 1, 0.609); }
 
 .introduction {
-  width: 100vw;
+  width: 98.7vw;
   height: 100vh;
   margin: auto;
   background-image: url("../img/retirement-slider.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 20px; }
+  padding-top: 20px;
+  -webkit-font-smoothing: antialiased; }
 
 .card-img-top {
   max-height: 200px;
-  min-height: 150px;
+  min-height: 100px;
   object-fit: cover; }
 
 .caption {
@@ -40,7 +42,6 @@
   transform: translate(-50%, -50%); }
 
 .learning-header {
-  padding-top: 0px;
   color: white;
   background: #000000;
   /* fallback for old browsers */
@@ -57,3 +58,16 @@
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #0f9b0f, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.aboutUs {
+  width: 98.7vw;
+  height: 50vh;
+  margin: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/homestead-overview.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 20px;
+  color: white;
+  -webkit-font-smoothing: antialiased; }
