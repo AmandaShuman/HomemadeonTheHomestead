@@ -1,8 +1,19 @@
 $color-navbar: #214b05;
 $color-secondary: #96CEA9;
+$color-mid: #0B710B;
 $text-color: white;
 $text-color-2: rgba(24, 1, 1, 0.609);
 
+.site-footer {
+  background-color: $color-mid;
+  color: $text-color;
+  a, .btn {
+    color: $text-color-2;
+  }
+  a:hover, .btn:hover {
+    color: $text-color;
+  }
+}
 .title {
   color: $text-color;
   -webkit-font-smoothing: antialiased;
@@ -67,14 +78,11 @@ $text-color-2: rgba(24, 1, 1, 0.609);
 }
 .aboutUs {
   width: 98.7vw;
-  height: 50vh;
-  margin: auto;
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/homestead-overview.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
-  padding-top: 20px;
+  background-attachment: local;
   color: $text-color; 
   -webkit-font-smoothing: antialiased;
 }

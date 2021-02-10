@@ -1,3 +1,11 @@
+.site-footer {
+  background-color: #0B710B;
+  color: white; }
+  .site-footer a, .site-footer .btn {
+    color: rgba(24, 1, 1, 0.609); }
+  .site-footer a:hover, .site-footer .btn:hover {
+    color: white; }
+
 .title {
   color: white;
   -webkit-font-smoothing: antialiased;
@@ -61,13 +69,10 @@
 
 .aboutUs {
   width: 98.7vw;
-  height: 50vh;
-  margin: auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/homestead-overview.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
-  padding-top: 20px;
+  background-attachment: local;
   color: white;
   -webkit-font-smoothing: antialiased; }

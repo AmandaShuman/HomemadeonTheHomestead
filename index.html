@@ -52,6 +52,10 @@
               <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
             </ul>
             <span class="navbar-text ml-auto">
+              <form>
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
               <a role="button" data-toggle="modal" data-target="#loginModal">
                 <i class="fa fa-sign-in"></i> Login/Register
               </a>
@@ -405,20 +409,50 @@
 
     <!--section to start about us-->
     <div class="container-fluid">
-      <div class="row">
-        <div class="col col-md-6 mx-auto aboutUs d-table">
+      <div class="row aboutUs">
+        <div class="col-md-6 mx-auto pt-4">
           <h1>Meet Amanda and Dan:</h1>
           <p>Amanda and Dan met and started their journey together in an apartment in Washington, DC. Their first garden started in their apartment six years ago with using vegetable scraps to have scallions available for their cooking. Now they live on a 1/2 acre homestead 5 miles outside the city limits where they are growing, presevering, and preparing a lot of their food. They also have plans to retire at 45.</p>
           <button class="btn btn-outline-light">Read More</button>
         </div>
-        <div class="col col-md-6 mx-auto d-table aboutUs">
-          <img src="img/usPic.jpg" alt="Picture of Dan and Amanda" class="rounded-circle mx-auto d-block" width="300"/>
+        <div class="col-md-6 mx-auto">
+          <img src="img/usPic.jpg" alt="Picture of Dan and Amanda" class="rounded-circle mx-auto d-block py-3" width="300"/>
         </div>
       </div>
     </div>
 
 
-    <footer> </footer>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-2 offset-1">
+            <h3>Links</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-5 col-sm-5 text-center">
+            <h3>Social</h3>
+            <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <a row="button" class="btn btn-link" href="tel:+12025551234"><i class="fa fa-phone"></i> 1-202-555-1234</a><br />
+            <a row="button" class="btn btn-link" href="mailto:homemadeOnTheHomestead@gmail.com"><i class="fa fa-envelope-o"></i> homemadeOnTheHomestead@gmail.com</a>
+            <form>
+              <input type="text" placeholder="Search..." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -426,5 +460,6 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   </body>
+  
 </html>
 
