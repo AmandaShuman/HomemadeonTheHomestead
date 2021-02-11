@@ -1,11 +1,87 @@
-.site-footer {
-  background-color: #0B710B;
-  color: white; }
-  .site-footer a, .site-footer .btn {
-    color: rgba(24, 1, 1, 0.609); }
-  .site-footer a:hover, .site-footer .btn:hover {
+/*modal CSS */
+.btn {
+  border-radius: 0;
+  border: none;
+  -webkit-transition: background-color ease-out 0.5s;
+  -moz-transition: background-color ease-out 0.5s;
+  -o-transition: background-color ease-out 0.5s;
+  transition: background-color ease-out 0.5s; }
+  .btn:hover {
+    -webkit-transition: box-shadow ease-out 0.3s;
+    -moz-transition: box-shadow ease-out 0.3s;
+    -o-transition: box-shadow ease-out 0.3s;
+    transition: box-shadow ease-out 0.3s;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
+
+.btn-grey {
+  background: #797979;
+  color: #fff; }
+  .btn-grey:hover {
+    background: #575757;
+    color: #fff; }
+
+#loginModal .modal-dialog {
+  max-width: 580px; }
+
+#loginModal .modal-content {
+  border-radius: 0;
+  border: none; }
+  #loginModal .modal-content form label {
+    font-weight: normal;
+    margin-bottom: 2px; }
+
+#loginModal .modal-footer {
+  text-align: left; }
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  color: white;
+  z-index: 1; }
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none; }
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #999; }
+
+.nav-tabs > li {
+  width: 50%; }
+  .nav-tabs > li a {
+    margin: 0;
+    border-radius: 0;
+    text-align: center;
+    font-weight: 600; }
+
+.nav-tabs > li {
+  background-color: #0B710B; }
+  .nav-tabs > li a {
     color: white; }
 
+.modal-content {
+  background-color: #f7f7f7; }
+
+/* Form validation */
+.parsley-error {
+  border-color: #c00;
+  color: #c00;
+  background-color: #FFD9D9; }
+
+/* Forgot Password Section */
+#forgot-password-collapse {
+  border-top: 2px dashed #999;
+  margin-top: 30px; }
+  #forgot-password-collapse h5 {
+    margin-top: 15px; }
+  #forgot-password-collapse form {
+    margin-top: 20px; }
+
+.existing-customer {
+  display: none; }
+
+/* body CSS */
 .title {
   color: white;
   -webkit-font-smoothing: antialiased;
@@ -76,3 +152,11 @@
   background-attachment: local;
   color: white;
   -webkit-font-smoothing: antialiased; }
+
+.site-footer {
+  background-color: #0B710B;
+  color: white; }
+  .site-footer a, .site-footer .btn {
+    color: rgba(24, 1, 1, 0.609); }
+  .site-footer a:hover, .site-footer .btn:hover {
+    color: white; }

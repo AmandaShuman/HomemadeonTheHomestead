@@ -4,16 +4,106 @@ $color-mid: #0B710B;
 $text-color: white;
 $text-color-2: rgba(24, 1, 1, 0.609);
 
-.site-footer {
-  background-color: $color-mid;
-  color: $text-color;
-  a, .btn {
-    color: $text-color-2;
+/*modal CSS */
+.btn {
+  border-radius: 0;
+  border: none;
+  -webkit-transition: background-color ease-out 0.5s;
+  -moz-transition: background-color ease-out 0.5s;
+  -o-transition: background-color ease-out 0.5s;
+  transition: background-color ease-out 0.5s;
+  &:hover {
+    -webkit-transition: box-shadow ease-out 0.3s;
+    -moz-transition: box-shadow ease-out 0.3s;
+    -o-transition: box-shadow ease-out 0.3s;
+    transition: box-shadow ease-out 0.3s;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   }
-  a:hover, .btn:hover {
+}
+.btn-grey {
+  background: #797979;
+  color: #fff;
+  &:hover {
+    background: #575757;
+    color: #fff;
+  }
+}
+#loginModal {
+  .modal-dialog {
+    max-width: 580px; 
+  }
+  .modal-content {
+    border-radius: 0;
+    border: none;
+    form {
+      label {
+        font-weight: normal;
+        margin-bottom: 2px;
+      }
+    }
+  }
+  .modal-footer {
+    text-align: left;
+  }
+}
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  color: $text-color; 
+  z-index: 1;
+}
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  &:focus {
+    box-shadow: none;
+    border-color: #999;
+  }
+}
+.nav-tabs {
+  &>li {
+    width: 50%;
+    a {
+      margin: 0;
+      border-radius: 0;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}
+.nav-tabs>li {
+  background-color: $color-mid;
+  a{
     color: $text-color;
   }
 }
+
+.modal-content {
+  background-color: #f7f7f7;
+}
+/* Form validation */
+.parsley-error {
+  border-color: #c00;
+  color: #c00;
+  background-color: #FFD9D9;
+}
+/* Forgot Password Section */
+#forgot-password-collapse {
+  border-top: 2px dashed #999;
+  margin-top: 30px;
+  h5 {
+    margin-top: 15px;
+  }
+  form {
+    margin-top: 20px;
+  }
+}
+.existing-customer {
+  display: none;
+}
+
+/* body CSS */
 .title {
   color: $text-color;
   -webkit-font-smoothing: antialiased;
@@ -23,12 +113,10 @@ $text-color-2: rgba(24, 1, 1, 0.609);
   background-color: $color-navbar;
   color: $text-color;
 }
-
 .financial, .homesteading {
   background-color: $color-secondary;
   color: $text-color-2;
 }
-
 .introduction {
   width: 98.7vw;
   height: 100vh;
@@ -40,20 +128,17 @@ $text-color-2: rgba(24, 1, 1, 0.609);
   padding-top: 20px;
   -webkit-font-smoothing: antialiased;
 }
-
 .card-img-top {
   max-height: 200px;
   min-height: 100px;
   object-fit: cover;
 }
-
 .caption {
   position: absolute;
   top: 20%;
   left: 0;
   width: 100%;
 }
-
 .btn-centered {
   margin: 0;
   position: absolute;
@@ -62,14 +147,12 @@ $text-color-2: rgba(24, 1, 1, 0.609);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
 .learning-header {
   color: $text-color;
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
 .selling-header {
   color: $text-color;
   background: #000000;  /* fallback for old browsers */
@@ -85,4 +168,14 @@ $text-color-2: rgba(24, 1, 1, 0.609);
   background-attachment: local;
   color: $text-color; 
   -webkit-font-smoothing: antialiased;
+}
+.site-footer {
+  background-color: $color-mid;
+  color: $text-color;
+  a, .btn {
+    color: $text-color-2;
+  }
+  a:hover, .btn:hover {
+    color: $text-color;
+  }
 }
