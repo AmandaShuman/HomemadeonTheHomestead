@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+  </head>
+
+  <body>
+    <header>
+      <!--this is all the navbar section with login modal-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"> <img src="img/old-homestead-logo.jpg" height="90" width="90" /></a>
+          <p class="title">Homemade <br /> on the <br /> Homestead</p>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#homesteadNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="collapse navbar-collapse" id="homesteadNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-user fa-lg"></i> About</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-toggle="dropdown"><i class="fa fa-book fa-lg"></i> Blogs</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="blogAdult.html">Adulting</a>
+                  <a class="dropdown-item" href="blogFinances.html">Finances</a>
+                  <a class="dropdown-item" href="blogGarden.html">Gardening</a>
+                  <a class="dropdown-item" href="blogHomestead.html">Homesteading</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="shop.html" id="shopDropdown" role="button" data-toggle="dropdown"><i class="fa fa-shopping-basket fa-lg"></i> Shop</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="shopDesserts.html">Jams</a>
+                  <a class="dropdown-item" href="shopMeals.html">Jar Meals</a>
+                  <a class="dropdown-item" href="shopDesserts.html">Desserts</a>
+                  <a class="dropdown-item" href="shopOther.html">Other</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+            </ul>
+            <span class="navbar-text ml-auto">
+              <form>
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+              <a role="button" data-toggle="modal" data-target="#loginModal" data-tab="login">
+                <i class="fa fa-sign-in"></i> Login/Register
+              </a>
+            </span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active pl-3"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Account Login</a></li>
+              <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Create an Account</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade show active" id="login">
+                <div class="modal-header">
+                  <h5>If you already have an online account, please enter your email address and password below.</h5>
+                </div>
+                <div class="modal-body">
+                  <form data-parsley-validate>
+                    <div class="form-group">
+                      <label for="email">Email address</label>
+                      <input type="email" class="form-control" id="email" placeholder="Email" data-parsley-trigger="change" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password" data-parsley-trigger="change" required>
+                    </div>
+                    <button type="submit" class="btn btn-grey">Log in Now</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <h5>Forgot your password?</h5>
+                  <p><a class="" role="button" data-toggle="collapse" href="#forgot-password-collapse" aria-expanded="false" aria-controls="forgot-password-collapse">Click here</a> to have a new one sent to you.</p>
+                  
+                  <div class="collapse" id="forgot-password-collapse">
+                    <h5>Password Assistance</h5>
+                    <p>Please enter your registerd email address and we will send you a new password.</p>
+                    <form>
+                      <div class="form-group">
+                        <label for="forgot-password-email">Email address</label>
+                        <input type="email" class="form-control" id="forgot-password-email" placeholder="Email">
+                      </div>
+                      <button type="submit" class="btn btn-grey">Send password</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="register">
+                <div class="modal-header">
+                  <h5>New Account Registration</h5>
+                </div>
+                <div class="modal-body">
+                  <form class="row">
+                    <div class="form-group col-sm-6">
+                      <label for="first-name">First Name</label>
+                      <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="last-name">Last Name</label>
+                      <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                    </div>
+                    <div class="checkbox col-xs-12 mx-auto">
+                      <label>
+                        <input type="checkbox" id="customer-type"> Already a Customer?
+                      </label>
+                    </div>
+                    <div class="new-customer clearfix">
+                      <div class="form-group col-sm-12">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" class="form-control" id="email-address" placeholder="Email" required>
+                      </div>
+                      <div class="form-group col-sm-12">
+                        <label for="confirm-first-name">Confirm Email Address</label>
+                        <input type="email" class="form-control" id="confirm-first-name" placeholder="Email" required>
+                      </div>
+                      <div class="form-group col-sm-12 mb-0">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                      </div>
+                      <small class="col-xs-12 ml-4 mt-0 mb-5">Password must be a minimum of 8 characters and contain at least 1 number and 1 letter.</small>
+                      <div class="form-group col-sm-12 mt-2">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Password" required>
+                      </div>
+                      <div class="checkbox col-xs-12 mx-3 my-3">
+                        <label>
+                          <input type="checkbox"> I would like to receive occasional informational updates, shipment tracking info and order status updates. We promise not to spam you!
+                        </label>
+                      </div>
+                      <div class="form-group col-sm-12">
+                        <label for="address-one">Address 1</label>
+                        <input type="text" class="form-control" id="address-one" placeholder="House #, Street">
+                      </div>
+                      <div class="form-group col-sm-12">
+                        <label for="address-two">Address 2</label>
+                        <input type="text" class="form-control" id="address-two" placeholder="Apt./Unit #">
+                      </div>
+                      <div class="row mx-auto">
+                        <div class="form-group col-sm-6">
+                          <label for="city">City</label>
+                          <input type="text" class="form-control" id="city" placeholder="City, Town">
+                        </div>
+                        <div class="form-group col-sm-3">
+                          <label for="state">State</label>
+                          <input type="text" class="form-control" id="state" placeholder="State">
+                        </div>
+                        <div class="form-group col-sm-3">
+                          <label for="zip-code">Zip Code</label>
+                          <input type="tel" class="form-control" id="zip-code" placeholder="5 digit zip">
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label for="phone">Phone</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Phone number">
+                      </div>
+                    </div>
+                    <div class="existing-customer clearfix">
+                      <div class="form-group col-sm-6">
+                        <label for="customer-number">Customer #:</label>
+                        <input type="tel" class="form-control" id="customer-number" placeholder="Prev. only">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label for="zip-code">Zip Code</label>
+                        <input type="tel" class="form-control" id="zip-code" placeholder="5 digit zip">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-grey create-account">Create Account</button>
+                      <button type="submit" class="btn btn-grey verify-account hide">Verify Account</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--breadcrumb-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Blogs</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!--Actual content for section-->
+    <div class="container-fluid">
+      <h1>Apologies for our mess! This page should be up and running soon!</h1>
+      <img src="img/Page_Under_Construction.png " />
+    </div>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-2 offset-1">
+            <h3>Links</h3>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-5 col-sm-5 text-center">
+            <h3>Social</h3>
+            <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <a row="button" class="btn btn-link" href="tel:+12025551234"><i class="fa fa-phone"></i> 1-202-555-1234</a><br />
+            <a row="button" class="btn btn-link" href="mailto:homemadeOnTheHomestead@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope-o"></i> homemadeOnTheHomestead@gmail.com</a>
+            <form>
+              <input type="text" placeholder="Search..." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/parsleyjs/dist/parsley.min.js"></script>
+
+    <script>
+    
+    </script>
+  </body>
+  
+</html>

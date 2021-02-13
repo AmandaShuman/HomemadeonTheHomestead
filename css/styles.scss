@@ -1,9 +1,15 @@
 $color-navbar: #214b05;
 $color-secondary: #96CEA9;
+$color-tertiary: #3A6321;
+$color-fourth: #7FC355;
+$color-midGreen: #A4D159;
 $color-mid: #0B710B;
 $text-color: white;
 $text-color-2: rgba(24, 1, 1, 0.609);
 
+body {
+  padding-top: 110px;
+}
 /*modal CSS */
 .btn {
   border-radius: 0;
@@ -103,7 +109,7 @@ $text-color-2: rgba(24, 1, 1, 0.609);
   display: none;
 }
 
-/* body CSS */
+/* body CSS in index.html */
 .title {
   color: $text-color;
   -webkit-font-smoothing: antialiased;
@@ -117,9 +123,17 @@ $text-color-2: rgba(24, 1, 1, 0.609);
   background-color: $color-secondary;
   color: $text-color-2;
 }
+.jams, .meals {
+  background-color: $color-tertiary;
+  color: $text-color;
+}
+.desserts, .other {
+  background-color: $color-fourth;
+  color: $text-color-2;
+}
 .introduction {
   width: 98.7vw;
-  height: 100vh;
+  height: 90vh;
   margin: auto;
   background-image:url("../img/retirement-slider.jpeg");
   background-size: cover;
@@ -177,5 +191,25 @@ $text-color-2: rgba(24, 1, 1, 0.609);
   }
   a:hover, .btn:hover {
     color: $text-color;
+  }
+}
+
+//about section SCSS
+.about {
+  background-color: $color-tertiary;
+  color: $text-color;
+  ul, p {
+    color: black;
+  }
+}
+
+.breadcrumb {
+    background-color: transparent;
+  }
+//contact section SCSS
+.contact {
+  background-color: $color-secondary;
+  h2 {
+  font-family: 'Indie Flower', cursive;
   }
 }

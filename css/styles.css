@@ -1,3 +1,6 @@
+body {
+  padding-top: 110px; }
+
 /*modal CSS */
 .btn {
   border-radius: 0;
@@ -81,7 +84,7 @@
 .existing-customer {
   display: none; }
 
-/* body CSS */
+/* body CSS in index.html */
 .title {
   color: white;
   -webkit-font-smoothing: antialiased;
@@ -95,9 +98,17 @@
   background-color: #96CEA9;
   color: rgba(24, 1, 1, 0.609); }
 
+.jams, .meals {
+  background-color: #3A6321;
+  color: white; }
+
+.desserts, .other {
+  background-color: #7FC355;
+  color: rgba(24, 1, 1, 0.609); }
+
 .introduction {
   width: 98.7vw;
-  height: 100vh;
+  height: 90vh;
   margin: auto;
   background-image: url("../img/retirement-slider.jpeg");
   background-size: cover;
@@ -160,3 +171,17 @@
     color: rgba(24, 1, 1, 0.609); }
   .site-footer a:hover, .site-footer .btn:hover {
     color: white; }
+
+.about {
+  background-color: #3A6321;
+  color: white; }
+  .about ul, .about p {
+    color: black; }
+
+.breadcrumb {
+  background-color: transparent; }
+
+.contact {
+  background-color: #96CEA9; }
+  .contact h2 {
+    font-family: 'Indie Flower', cursive; }

@@ -22,7 +22,7 @@
       <!--this is all the navbar section with login modal-->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="index.html"> <img src="img/old-homestead-logo.jpg" height="90" width="90" /></a>
+          <a class="navbar-brand" href="#"> <img src="img/old-homestead-logo.jpg" height="90" width="90" /></a>
           <p class="title">Homemade <br /> on the <br /> Homestead</p>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#homesteadNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -30,26 +30,26 @@
           <div class="collapse navbar-collapse" id="homesteadNavbar">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user fa-lg"></i> About</a></li>
+              <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-user fa-lg"></i> About</a></li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-toggle="dropdown"><i class="fa fa-book fa-lg"></i> Blogs</a>
+                <a class="nav-link dropdown-toggle" href="blogs.html" id="blogDropdown" role="button" data-toggle="dropdown"><i class="fa fa-book fa-lg"></i> Blogs</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Adulting</a>
-                  <a class="dropdown-item" href="#">Finances</a>
-                  <a class="dropdown-item" href="#">Gardening</a>
-                  <a class="dropdown-item" href="#">Homesteading</a>
+                  <a class="dropdown-item" href="blogAdult.html">Adulting</a>
+                  <a class="dropdown-item" href="blogFinances.html">Finances</a>
+                  <a class="dropdown-item" href="blogGarden.html">Gardening</a>
+                  <a class="dropdown-item" href="blogHomestead.html">Homesteading</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-toggle="dropdown"><i class="fa fa-shopping-basket fa-lg"></i> Shop</a>
+                <a class="nav-link dropdown-toggle" href="shop.html" id="shopDropdown" role="button" data-toggle="dropdown"><i class="fa fa-shopping-basket fa-lg"></i> Shop</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Jams</a>
-                  <a class="dropdown-item" href="#">Jar Meals</a>
-                  <a class="dropdown-item" href="#">Desserts</a>
-                  <a class="dropdown-item" href="#">Other</a>
+                  <a class="dropdown-item" href="shopDesserts.html">Jams</a>
+                  <a class="dropdown-item" href="shopMeals.html">Jar Meals</a>
+                  <a class="dropdown-item" href="shopDesserts.html">Desserts</a>
+                  <a class="dropdown-item" href="shopOther.html">Other</a>
                 </div>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
             </ul>
             <span class="navbar-text ml-auto">
               <form>
@@ -204,14 +204,55 @@
       </div>
     </header>
 
-      <!--section for introduction-->
-      <div class="introduction">
-        <div class="caption">
-          <h1 class="text-center text-white"><strong>We help people with</strong></h1>
-          <h2 class="text-center text-white">Adulting • Finances • Gardening • Homesteading</h2>
-          <a href="#" type="button" class="btn btn-success btn-centered">Sign up now!</a>
+    <!--section for introduction-->
+    <div class="introduction">
+      <div class="caption">
+        <h1 class="text-center text-white"><strong>We help people with</strong></h1>
+        <h2 class="text-center text-white">Adulting • Finances • Gardening • Homesteading</h2>
+        <button type="button" class="btn btn-success btn-centered btn-lg" data-toggle="modal" data-target="#signUpModal">Sign up now!</button>
+      </div>
+    </div>
+
+    <!--modal for sign up for introduction-->
+    <div id="signUpModal" class="modal fade" role="dialogue">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3>Sign up</h3>
+          </div>
+          <div class="modal-body">
+            <form class="row">
+              <div class="form-group col-sm-6">
+                <label for="first-name">First Name</label>
+                <input type="text" class="form-control" id="first-name" placeholder="First Name">
+              </div>
+              <div class="form-group col-sm-12">
+                <label for="email-address">Email Address</label>
+                <input type="email" class="form-control" id="email-address" placeholder="Email" required>
+              </div>
+              <div class="form-group col-sm-12 mb-0">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+              </div>
+              <small class="col-xs-12 ml-4 mt-0">Password must be a minimum of 8 characters and contain at least 1 number and 1 letter.</small>
+              <div class="form-group col-sm-12 mt-2">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Password" required>
+              </div>
+              <div class="checkbox col-xs-12 mx-3 my-3">
+                <label>
+                  <input type="checkbox"> I would like to receive occasional informational updates, shipment tracking info and order status updates. We won't spam you with emails and we NEVER sell your information.
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
+          </div>
         </div>
       </div>
+    </div>
 
     <!--section to introduce different subjects-->
     <div>
@@ -221,49 +262,49 @@
       <div class="row">
         <div class="col-md-6 col-xl-3 text-center d-flex">
           <div class="card">
-            <a href="#"><img class="card-img-top" src="img/adulting.jpg" alt="adulting" /></a>
+            <a href="blogAdult.html"><img class="card-img-top" src="img/adulting.jpg" alt="adulting" /></a>
             <div class="card-body adulting">
               <h3 class="card-title">Adulting</h3>
               <p class="card-text flex-fill">Whether it is learning how to boil an egg or changing your own tire, we've got you covered! Learn to cook your own meals, basic home maintainence, and much more.</p>
             </div>
             <div class="card-body">
-              <a href="#" class="card-link"> Learn More... </a>
+              <a href="blogAdult.html" class="card-link"> Learn More... </a>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 text-center d-flex">
           <div class="card">
-            <a href="#"><img class="card-img-top" src="img/Financial-Freedom.jpg" alt="financial freedom" /></a>
+            <a href="blogFinances.html"><img class="card-img-top" src="img/Financial-Freedom.jpg" alt="financial freedom" /></a>
             <div class="card-body financial">
               <h3 class="card-title">Financial Freedom</h3>
               <p class="card-text flex-fill">Learn to become financially independent!From getting unburied from debt to retiring early, learn how to hone your financial skills so you have spare money in your bank account.</p>
             </div>
             <div class="card-body">
-              <a href="#" class="card-link"> Learn More... </a>
+              <a href="blogFinances.html" class="card-link"> Learn More... </a>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 text-center d-flex">
           <div class="card">
-            <a href="#"><img class="card-img-top" src="img/urban-gardening.jpg" alt="Urban gardening" /></a>
+            <a href="blogGarden.html"><img class="card-img-top" src="img/urban-gardening.jpg" alt="Urban gardening" /></a>
             <div class="card-body gardening">
               <h3 class="card-title">Gardening</h3>
               <p class="card-text flex-fill">Whether you have lots of space or almost none, you can garden! You can garden in your apartment or in your home. We garden right here in the city.</p>
             </div>
             <div class="card-body">
-              <a href="#" class="card-link"> Learn More... </a>
+              <a href="blogGarden.html" class="card-link"> Learn More... </a>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 text-center d-flex">
           <div class="card">
-            <a href="#"><img class="card-img-top" src="img/canning-food.jfif" alt="canning food" /></a>
+            <a href="blogHomestead.html"><img class="card-img-top" src="img/canning-food.jfif" alt="canning food" /></a>
             <div class="card-body homesteading">
               <h3 class="card-title">Homesteading</h3>
               <p class="card-text flex-fill">A great way to be more independent is to work on making more yourself. Actually know what is in your food - you may actually like the taste of food without all of the preseveratives in it.</p>
             </div>
             <div class="card-body">
-              <a href="#" class="card-link"> Learn More... </a>
+              <a href="blogHomestead.html" class="card-link"> Learn More... </a>
             </div>
           </div>
         </div>
@@ -369,49 +410,49 @@
       <div class="row">
         <div class="col-md-6 col-xl-3 text-center d-flex">
           <div class="card">
-            <a href="#"><img class="card-img-top" src="img/jams-and-jellies.jpg" alt="Jams and Jellies" /></a>
-            <div class="card-body adulting">
+            <a href="shopJams.html"><img class="card-img-top" src="img/jams-and-jellies.jpg" alt="Jams and Jellies" /></a>
+            <div class="card-body jams">
               <h3 class="card-title">Preserves</h3>
               <p class="card-text flex-fill">We have jams, jellies, and marmelades. Sweetened from honey produced from our own bees, we keep our jellies low-sugar and full of fruit.</p>
             </div>
             <div class="card-body">
-              <a href="#" class="card-link"> Learn More... </a>
+              <a href="shopJams.html" class="card-link"> Learn More... </a>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 text-center d-flex">
           <div class="card">
-            <a href="#"><img class="card-img-top" src="img/3-2-1-cake-in-a-mug.png" alt="cake in a jar mix" /></a>
-            <div class="card-body financial">
+            <a href="shopDesserts.html"><img class="card-img-top" src="img/3-2-1-cake-in-a-mug.png" alt="cake in a jar mix" /></a>
+            <div class="card-body desserts">
               <h3 class="card-title">Cupcake in a Mug mixes</h3>
               <p class="card-text flex-fill">With just 3 scoops of mix, 2 scoops of water, and 1 minute in the microwave, you've got your own personal cupcake!</p>
             </div>
             <div class="card-body">
-              <a href="#" class="card-link"> Learn More... </a>
+              <a href="shopDesserts.html" class="card-link"> Learn More... </a>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 text-center d-flex">
           <div class="card">
-            <a href="#"><img class="card-img-top" src="img/meal-in-a-jar.jpg" alt="Premade meals" /></a>
-            <div class="card-body gardening">
+            <a href="shopMeals.html"><img class="card-img-top" src="img/meal-in-a-jar.jpg" alt="Premade meals" /></a>
+            <div class="card-body meals">
               <h3 class="card-title">Premade meals</h3>
               <p class="card-text flex-fill">Get premade meals without all the unnecessary packaging. We have meals designed to cook quickly and even have instant pot meals.</p>
             </div>
             <div class="card-body">
-              <a href="#" class="card-link"> Learn More... </a>
+              <a href="shopMeals.html" class="card-link"> Learn More... </a>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-xl-3 text-center d-flex">
           <div class="card">
-            <a href="#"><img class="card-img-top" src="img/cookies.jpg" alt="cookies" /></a>
-            <div class="card-body homesteading">
+            <a href="shopOther.html"><img class="card-img-top" src="img/cookies.jpg" alt="cookies" /></a>
+            <div class="card-body other">
               <h3 class="card-title">Sweets</h3>
               <p class="card-text flex-fill">We sell cookies and cupcakes in a jar. There is the option to purchase a mix so you can make it yourself or already premade!</p>
             </div>
             <div class="card-body">
-              <a href="#" class="card-link"> Learn More... </a>
+              <a href="shopOther.html" class="card-link"> Learn More... </a>
             </div>
           </div>
         </div>
@@ -515,7 +556,7 @@
         <div class="col-md-6 mx-auto pt-4">
           <h1>Meet Amanda and Dan:</h1>
           <p>Amanda and Dan met and started their journey together in an apartment in Washington, DC. Their first garden started in their apartment six years ago with using vegetable scraps to have scallions available for their cooking. Now they live on a 1/2 acre homestead 5 miles outside the city limits where they are growing, presevering, and preparing a lot of their food. They also have plans to retire at 45.</p>
-          <button class="btn btn-outline-light">Read More</button>
+          <a class="btn btn-outline-light" href="aboutus.html">Read More</a>
         </div>
         <div class="col-md-6 mx-auto">
           <img src="img/usPic.jpg" alt="Picture of Dan and Amanda" class="rounded-circle mx-auto d-block py-3" width="300"/>
@@ -531,10 +572,10 @@
             <h3>Links</h3>
             <ul class="list-unstyled">
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="aboutus.html">About</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="col-5 col-sm-5 text-center">
@@ -546,7 +587,7 @@
           </div>
           <div class="col-sm-4 text-center">
             <a row="button" class="btn btn-link" href="tel:+12025551234"><i class="fa fa-phone"></i> 1-202-555-1234</a><br />
-            <a row="button" class="btn btn-link" href="mailto:homemadeOnTheHomestead@gmail.com"><i class="fa fa-envelope-o"></i> homemadeOnTheHomestead@gmail.com</a>
+            <a row="button" class="btn btn-link" href="mailto:homemadeOnTheHomestead@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope-o"></i> homemadeOnTheHomestead@gmail.com</a>
             <form>
               <input type="text" placeholder="Search..." name="search">
               <button type="submit"><i class="fa fa-search"></i></button>
