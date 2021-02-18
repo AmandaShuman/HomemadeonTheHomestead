@@ -1,11 +1,12 @@
 $color-navbar: #214b05;
-$color-secondary: #96CEA9;
+$color-secondary: #3A6321;
 $color-tertiary: #3A6321;
 $color-fourth: #7FC355;
 $color-midGreen: #A4D159;
 $color-mid: #0B710B;
 $text-color: white;
 $text-color-2: rgba(24, 1, 1, 0.609);
+$text-color-grey: #C0B9B1;
 
 body {
   padding-top: 110px;
@@ -200,7 +201,7 @@ body {
   background-color: $color-tertiary;
   color: $text-color;
   ul, p {
-    color: black;
+    color: $text-color-grey;
   }
 }
 

@@ -96,7 +96,7 @@ body {
   color: white; }
 
 .financial, .homesteading {
-  background-color: #96CEA9;
+  background-color: #3A6321;
   color: rgba(24, 1, 1, 0.609); }
 
 .jams, .meals {
@@ -177,12 +177,12 @@ body {
   background-color: #3A6321;
   color: white; }
   .about ul, .about p {
-    color: black; }
+    color: #C0B9B1; }
 
 .breadcrumb {
   background-color: transparent; }
 
 .contact {
-  background-color: #96CEA9; }
+  background-color: #3A6321; }
   .contact h2 {
     font-family: 'Indie Flower', cursive; }
