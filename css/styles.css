@@ -97,7 +97,7 @@ body {
 
 .financial, .homesteading {
   background-color: #3A6321;
-  color: rgba(24, 1, 1, 0.609); }
+  color: #C0B9B1; }
 
 .jams, .meals {
   background-color: #3A6321;
@@ -169,7 +169,7 @@ body {
   background-color: #0B710B;
   color: white; }
   .site-footer a, .site-footer .btn {
-    color: rgba(24, 1, 1, 0.609); }
+    color: #C0B9B1; }
   .site-footer a:hover, .site-footer .btn:hover {
     color: white; }
 
@@ -177,12 +177,15 @@ body {
   background-color: #3A6321;
   color: white; }
   .about ul, .about p {
-    color: #C0B9B1; }
+    color: white; }
 
 .breadcrumb {
   background-color: transparent; }
 
 .contact {
-  background-color: #3A6321; }
+  background-color: #3A6321;
+  color: white; }
+  .contact .btn {
+    color: white; }
   .contact h2 {
     font-family: 'Indie Flower', cursive; }
