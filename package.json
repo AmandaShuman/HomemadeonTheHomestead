@@ -12,43 +12,40 @@
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "usemin": "usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin blogAdult.html -d dist --htmlmin -o dist/blogAdult.html && usemin blogFinances.html -d dist --htmlmin -o dist/blogFinances.html && usemin blogGarden.html -d dist --htmlmin -o dist/blogGarden.html && usemin blogHomestead.html -d dist --htmlmin -o dist/blogHomestead.html && usemin blogs.html -d dist --htmlmin -o dist/blogs.html && usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin shop.html -d dist --htmlmin -o dist/shop.html && usemin shopDesserts.html -d dist --htmlmin -o dist/shopDesserts.html && usemin shopJams.html -d dist --htmlmin -o dist/shopJams.html && usemin shopMeals.html -d dist --htmlmin -o dist/shopMeals.html && usemin shopOther.html -d dist --htmlmin -o dist/shopOther.html",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AmandaShuman/HomemadeonTheHomestead.git"
-  },
-  "keywords": [
-    "homemade",
-    "homestead",
-    "garden",
-    "financial",
-    "independence"
-  ],
-  "author": "Amanda Shuman",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AmandaShuman/HomemadeonTheHomestead/issues"
-  },
-  "homepage": "https://github.com/AmandaShuman/HomemadeonTheHomestead#readme",
-  "devDependencies": {
-    "copyfiles": "^2.2.0",
-    "imagemin-cli": "^5.1.0",
-    "lite-server": "^2.5.4",
-    "node-sass": "^4.14.1",
-    "onchange": "^7.0.0",
-    "parallelshell": "3.0.1",
-    "rimraf": "^3.0.2",
-    "usemin-cli": "^0.6.0"
-  },
-  "dependencies": {
-    "bootstrap": "^4.5.2",
-    "bootstrap-social": "^5.1.1",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.5.1",
-    "parsleyjs": "^2.9.2",
-    "popper.js": "^1.16.1"
+    "keywords": [
+      "homemade",
+      "homestead",
+      "garden",
+      "financial",
+      "independence"
+    ],
+    "author": "Amanda Shuman",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/AmandaShuman/HomemadeonTheHomestead/issues"
+    },
+    "homepage": "https://github.com/AmandaShuman/HomemadeonTheHomestead#readme",
+    "devDependencies": {
+      "copyfiles": "^2.2.0",
+      "imagemin-cli": "^5.1.0",
+      "lite-server": "^2.5.4",
+      "node-sass": "^4.14.1",
+      "onchange": "^7.0.0",
+      "parallelshell": "3.0.1",
+      "rimraf": "^3.0.2",
+      "usemin-cli": "^0.6.0"
+    },
+    "dependencies": {
+      "bootstrap": "^4.5.2",
+      "bootstrap-social": "^5.1.1",
+      "font-awesome": "^4.7.0",
+      "jquery": "^3.5.1",
+      "parsleyjs": "^2.9.2",
+      "popper.js": "^1.16.1"
+    }
   }
-}
