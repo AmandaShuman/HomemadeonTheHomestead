@@ -215,11 +215,154 @@
         </div>
       </div>
     </div>
-    <!--Actual content for section-->
-    <div class="container-fluid">
-      <h1>Apologies for our mess! This page should be up and running soon!</h1>
-      <img src="img/Page_Under_Construction.png " />
+
+    <!--items for sale-->
+    <div>
+      <h1 class="text-center selling-header"><br />Not sure if you want to make these on your own? That's okay! We can make them for you! Click on a category below to get started.<br /><br /></h1>
     </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-xl-3 text-center d-flex">
+          <div class="card">
+            <a href="shopJams.html"><img class="card-img-top" src="img/jams-and-jellies.jpg" alt="Jams and Jellies" /></a>
+            <div class="card-body jams">
+              <h3 class="card-title">Preserves</h3>
+              <p class="card-text flex-fill">We have jams, jellies, and marmelades. Sweetened from honey produced from our own bees, we keep our jellies low-sugar and full of fruit.</p>
+            </div>
+            <div class="card-body">
+              <a href="shopJams.html" class="card-link"> Learn More... </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 text-center d-flex">
+          <div class="card">
+            <a href="shopDesserts.html"><img class="card-img-top" src="img/3-2-1-cake-in-a-mug.png" alt="cake in a jar mix" /></a>
+            <div class="card-body desserts">
+              <h3 class="card-title">Cupcake in a Mug mixes</h3>
+              <p class="card-text flex-fill">With just 3 scoops of mix, 2 scoops of water, and 1 minute in the microwave, you've got your own personal cupcake!</p>
+            </div>
+            <div class="card-body">
+              <a href="shopDesserts.html" class="card-link"> Learn More... </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 text-center d-flex">
+          <div class="card">
+            <a href="shopMeals.html"><img class="card-img-top" src="img/meal-in-a-jar.jpg" alt="Premade meals" /></a>
+            <div class="card-body meals">
+              <h3 class="card-title">Premade meals</h3>
+              <p class="card-text flex-fill">Get premade meals without all the unnecessary packaging. We have meals designed to cook quickly and even have instant pot meals.</p>
+            </div>
+            <div class="card-body">
+              <a href="shopMeals.html" class="card-link"> Learn More... </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 text-center d-flex">
+          <div class="card">
+            <a href="shopOther.html"><img class="card-img-top" src="img/cookies.jpg" alt="cookies" /></a>
+            <div class="card-body other">
+              <h3 class="card-title">Sweets</h3>
+              <p class="card-text flex-fill">We sell cookies and cupcakes in a jar. There is the option to purchase a mix so you can make it yourself or already premade!</p>
+            </div>
+            <div class="card-body">
+              <a href="shopOther.html" class="card-link"> Learn More... </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--carousel for  store reviews-->
+    <section class="pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-xl-8 mx-auto">
+            <div class="p-5 bg-white">
+              <!-- Bootstrap carousel-->
+              <div class="carousel slide" id="carouselStoreReviews" data-ride="carousel">
+                <!-- Bootstrap carousel indicators [nav] -->
+                <ol class="carousel-indicators mb-0">
+                  <li class="active" data-target="#carouselStoreReviews" data-slide-to="0"></li>
+                  <li data-target="#carouselStoreReviews" data-slide-to="1"></li>
+                  <li data-target="#carouselStoreReviews" data-slide-to="2"></li>
+                  <li data-target="#carouselStoreReviews" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Bootstrap inner [slides]-->
+                <div class="carousel-inner px-5 pb-4">
+                  <!-- Carousel slide review 1-->
+                  <div class="carousel-item active">
+                    <div class="media">
+                      <div class="media-body ml-3">
+                        <blockquote class="blockquote border-0 p-0">
+                          <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>I am a HUGE fan of the strawberry jam. It tastes like it was freshly made. I had no idea this is what jam was supposed to taste like!</p>
+                          <footer class="blockquote-footer text-right">Amelia Hamperbottom
+                            <cite title="Source Title">Grand Rapids, MI</cite>
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Carousel slide review 2-->
+                  <div class="carousel-item">
+                    <div class="media">
+                      <div class="media-body ml-3">
+                        <blockquote class="blockquote border-0 p-0">
+                          <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>The cupcake in a jar mix is amazing! It is great to be able to make one cupcake at a time (or more). This way there isn't a whole cake sitting around.</p>
+                          <footer class="blockquote-footer text-right">James Handy
+                            <cite title="Source Title">Chicago, IL</cite>
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Carousel slide review 3-->
+                  <div class="carousel-item">
+                    <div class="media">
+                      <div class="media-body ml-3">
+                        <blockquote class="blockquote border-0 p-0">
+                          <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>These premade meals are great! All I have to do is add simple ingredients (like water or butter) and put everything in my instant pot. Great after a long day at work</p>
+                          <footer class="blockquote-footer text-right">Henry Kissinger 
+                            <cite title="Source Title">Fort Wayne, IN</cite>
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Carousel slide review 4-->
+                  <div class="carousel-item">
+                    <div class="media">
+                      <div class="media-body ml-3">
+                        <blockquote class="blockquote border-0 p-0">
+                          <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>These made amazing wedding favors for my wedding. I love that I could customize the size so I could get small jars of cupcakes for everyone. Definitely recommend.</p>
+                          <footer class="blockquote-footer text-right">Christina H 
+                            <cite title="Source Title">Rochester, NY</cite>
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bootstrap controls [dots]-->
+                <a class="carousel-control-prev width-auto" href="#carouselStoreReviews" role="button" data-slide="prev">
+                  <i class="fa fa-angle-left text-dark text-lg"></i>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next width-auto" href="#carouselStoreReviews" role="button" data-slide="next">
+                  <i class="fa fa-angle-right text-dark text-lg"></i>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <footer class="site-footer">
