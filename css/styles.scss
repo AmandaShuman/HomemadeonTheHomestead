@@ -69,14 +69,16 @@ body {
     border-color: #999;
   }
 }
-.nav-tabs {
-  &>li {
-    width: 50%;
-    a {
-      margin: 0;
-      border-radius: 0;
-      text-align: center;
-      font-weight: 600;
+.modal {
+  .nav-tabs {
+    &>li {
+      width: 50%;
+      a {
+        margin: 0;
+        border-radius: 0;
+        text-align: center;
+        font-weight: 600;
+      }
     }
   }
 }

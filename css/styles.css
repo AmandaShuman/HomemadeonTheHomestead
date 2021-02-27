@@ -51,9 +51,9 @@ body {
     box-shadow: none;
     border-color: #999; }
 
-.nav-tabs > li {
+.modal .nav-tabs > li {
   width: 50%; }
-  .nav-tabs > li a {
+  .modal .nav-tabs > li a {
     margin: 0;
     border-radius: 0;
     text-align: center;
